@@ -1,0 +1,242 @@
+.benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &-list{
+        width: 270px;
+    }
+    .list-second> &+&{
+        margin-left: 30px;
+    }
+}
+
+.benefits-subtitle {
+    margin-bottom: 10px;
+    color: $primary-color;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.benefits-text {
+    color: $secondary-color;
+    line-height: 1.7;
+}
+
+.benefits-lists {
+    display: flex;
+}
+
+.benefits-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    height: 120px;
+}
+
+.benefits-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+}
+
+.list-second {
+    list-style: none;
+}
+
+
+.works {
+    display: flex;
+}
+
+.gallery {
+    display: flex;
+    position: relative;
+    padding-bottom: 94px;
+
+    &-title{
+        margin-bottom: 50px;
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 370px;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+
+    &-name{
+        color: #ffffff;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.works-examples {
+    position: relative;
+
+    .works>&+&{
+        margin-left: $gap;
+    }
+}
+
+
+.team {
+    background-color: rgba(245, 244, 250, 1);
+    padding-top: 94px;
+    ;
+    padding-bottom: 94px;
+
+    &-name{
+        margin-top: 30px;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    &-text{
+        margin-top: 10px;
+        color: $secondary-color;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    &-title{
+        margin-bottom: 50px;
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
+.employeers {
+    display: flex;
+    justify-content: center;
+}
+
+.employee {
+    background-color: #fff;
+    padding-bottom: 30px;
+    width: 270px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    .employeers>&+&{
+        margin-left: 30px;
+    }
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+.team-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    color: rgba(175, 177, 184, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &+&{
+        margin-left: 10px;
+    }
+    
+    &:hover, &:focus{
+    color: #fff;
+    background-color: $blue-color
+    }
+}
+
+
+.team-icon {
+    fill: currentColor;
+    height: 20px;
+    width: 20px;
+
+    &+&{
+        margin-left: 10px;
+    }
+}
+
+.regular-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title {
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: #afb1b8;
+    width: 170px;
+    height: 92px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color: $blue-color;
+        border-color: $blue-color;
+    }
+}
+
+.clients-logo {
+    fill: currentColor;
+}
+
+.clients-item+.clients-item {
+    margin-left: var(--gap);
+}
