@@ -128,14 +128,14 @@
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc(100% / 3 - 30px);
-    margin-right: calc(-1* var(--gap));
-    margin-bottom: calc(-1* var(--gap));
+    margin-right: calc(-1* $gap);
+    margin-bottom: calc(-1* $gap);
 }
 
 .examples-port {
     flex-basis: calc(100% / 3 - 30px);
-    margin-right: calc(var(--gap));
-    margin-bottom: calc(var(--gap));
+    margin-right: calc($gap);
+    margin-bottom: calc($gap);
 }
 
 .examples-link {
